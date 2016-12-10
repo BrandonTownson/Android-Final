@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello_World"> Bonjour</string>
+    <string name="button_text">Je suis un bouton</string>
+    <string name="Login_text">s\'identifier</string>
+    <string name="Password_text">mot de passe</string>
+    <string name="Lab_number2"> LAB2</string>
+    <string name="button1">bouton 1</string>
+    <string name="button2">bouton 2</string>
+    <string name="switch1">permettre à quelque chose</string>
+
+</resources>

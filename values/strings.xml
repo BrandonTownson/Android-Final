@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Lab 1</string>
+    <string name="Hello_World"> Hello World!</string>
+    <string name="button_text">I\'m a button</string>
+    <string name="Start_Chat">Start Chat</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="Login_text">Login</string>
+    <string name="Password_text">Password</string>
+    <string name="Lab_number2"> LAB2</string>
+    <string name="button1">button1</string>
+    <string name="button2">button2</string>
+    <string name="switch1">Enable something</string>
+    <string name="login_button">Login</string>
+    <string name="dialog_message">Kill me.....</string>
+    <string name="dialog_title">Title???</string>
+    <string name="ok">AHHHHHHHH</string>
+    <string name="cancel">Live another day...</string>
+    <string name="send_msg">Send</string>
+    <string name="StartWeather">WeatherForecast</string>
+    <string name="title_activity_weather_forecast_test">WeatherForecastTest</string>
+    <string name="title_message_list">Messages</string>
+    <string name="title_message_detail">Message Detail</string>
+    <string name="title_activity_final_assignment">FinalAssignment</string>
+    <string name="Open">Open Blinds</string>
+    <string name="Close">Close Blinds</string>
+    <string name="Half_open">HalfOpen</string>
+
+</resources>

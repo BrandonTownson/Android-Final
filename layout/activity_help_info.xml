@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.brandon.lab1.HelpInfo">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Brandon Townson"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_final_assignment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.brandon.lab1.FinalAssignment"
+        tools:showIn="@layout/activity_final_assignment">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:headerDividersEnabled="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativelayout"
+            android:layout_alignParentStart="true">
+            <Button
+                android:text="@string/Open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Open"
+                android:layout_below="@+id/send_msg"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:text="@string/Close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Close"
+                android:layout_alignBaseline="@+id/Open"
+                android:layout_alignBottom="@+id/Open"
+                android:layout_toEndOf="@+id/Open" />
+
+            <Button
+                android:text="@string/Half_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Half_Open"
+                android:layout_alignBaseline="@+id/Close"
+                android:layout_alignBottom="@+id/Close"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/Close" />
+
+            <Button
+                android:id="@+id/send_msg"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_msg"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="49dp" />
+
+            <EditText
+                android:id="@+id/chatWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/send_msg"
+                android:layout_toEndOf="@+id/send_msg"
+                android:layout_alignTop="@+id/send_msg" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_alignParentStart="true"
+                android:id="@+id/editText4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="Open Blinds button, will simulate opening the blinds,
+close button will close, and half open well self explanitory. The last button, buttom right corner
+auto opens a new activity to gather weather data and makes choices based on that."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

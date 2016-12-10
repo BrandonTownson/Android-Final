@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.brandon.lab1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".listItems" />
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".WeatherForecastTest" />
+        <activity android:name=".StartActivity" />
+
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+
+        <activity android:name=".ChatWindow" />
+        <activity
+            android:name=".MessageListActivity"
+            android:label="@string/title_message_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MessageDetailActivity"
+            android:label="@string/title_message_detail"
+            android:parentActivityName=".MessageListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.brandon.lab1.MessageListActivity" />
+        </activity>
+        <activity
+            android:name=".FinalAssignment"
+            android:label="@string/title_activity_final_assignment"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HelpInfo"></activity>
+    </application>
+
+</manifest>
